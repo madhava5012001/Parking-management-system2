@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Welcome, {{ user.username }}!</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'view_reports' %}">View Reports</a></li>
+                <li><a href="{% url 'manage_slots' %}">Manage Slots</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
